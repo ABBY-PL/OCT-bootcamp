@@ -1,0 +1,106 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+    background-color: aquamarine;
+}
+li{
+    background-color: red;
+}
+
+.listClass{
+    background-color: orange;
+}
+#listId{
+    background-color: yellow;
+}
+
+li[value="list"]{
+    background-color: green;
+}
+.listClass1, .listClass2{
+    background-color:skyblue;
+
+}
+
+ul .listClass3{
+    background-color: indigo;
+    color:white;
+}
+
+/* Pseudo-Classes */
+.hoverBtn:hover {
+    background-color: black;
+    color:white;
+    cursor: pointer;
+
+}
+.activeBtn:active{
+    background-color: darkgrey;
+    color:black;
+}
+
+.focusInput:focus{
+    background-color: skyblue;
+    border-width: 5px;
+}
+
+.visitedLink:visited{
+    color:red;
+}
+
+/* Pseudo-Elecments */
+
+.firstLetter::first-letter{
+    font-size:2em;
+}
+
+.firstLine::first-line{
+    color: bule;
+}
+
+.beforeAndAfter::before{
+    content: "before";
+    color:red;
+}
+
+.beforeAndAfter::after{
+    content: "after";
+    color:blue;
+}
+
+.selectParts::selection{
+    background-color: crimson;
+}
+
+/* earlier rule */
+.cascade{
+    color: red !important;
+}
+
+/* later rule */
+.cascade{
+    color: blue;
+}
+
+/* Box Model  */
+.boxModel{
+    background-color: lightgray;
+    border-width: 10px;
+    border-color: black;
+    border-style: solid dotted;
+    /* border-color: black 5px dashed; */
+    border-radius: 10px;
+    margin:10px;
+    margin-bottom: 30px;
+    padding:10px;
+    padding-left: 30px;
+    /* margin:10px 20px 30px; 
+    1 value= all sides
+    2 value= top and bottom, right and left
+    3 value= top, right and left, bottom
+    4 value= top, right, bottom, left
+    The same for padding*/
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        div {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <p>This is a warm-up activity for learning CSS.</p>
+    <br>
+
+    <h2>3 ways to include CSS style</h2>
+    <h3>Inline style</h3>
+    <p style="background-color:pink;">This paragraph is styled using inline style.</p>
+    <br>
+    <!--div is block element which means it covers the whole line/block-->
+    <h3>Internal CSS</h3>
+    <div>This div is styled using internal css.</div>
+    <br>
+    <h3>External CSS.</h3>
+    <span>This span is styled using external css.</span>
+    <!-- Span is an inline element which means it only cover what it needs -->
+    <br><br>
+
+    <h2> CSS Selectors</h2>
+    <ul>
+        <li>This is selected using element selectors.</li>
+        <li class="listClass">This is selected using class selector.</li>
+        <li class="listClass">This is selected using class selector.</li>
+        <li id="listId">This is selected using id selector</li>
+        <li value="list">This is selected using attribute selector.</li>
+        <li class="listClass1">This is selected using group selector.</li>
+        <li class="listClass2">This is selected using group selector.</li>
+        <li class="listClass3">This is selected using group selector.</li>
+    </ul>
+
+    <h2>Pseudo Classes</h2>
+    <hr>
+    <h3> Hover and Active Pseudo Class</h3>
+    <p>Hover over the button to change color</p>
+    <button class="hoverBtn activeBtn">Hover over me or clikc me!</button>
+    <hr>
+
+    <h3>Focus Pseudo Class</h3>
+    <p>Click on input field to focus</p>
+    <input type="text" class="focusInput">
+    <hr>
+    <h3> Visited Pseudo Class</h3>
+    <a href="https://www.google.com" class="visitedLink">Visit me!</a>
+    <hr>
+
+    <br><br>
+
+    <h2>Pseudo Elements</h2>
+    <p class="firstLetter">The first letter of this paragraph is bigger than the rest of text.</p>
+
+    <p class="firstLine">The first line of this paragraph is color blue. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem voluptates harum deleniti saepe perspiciatis exercitationem ratione officiis blanditiis numquam odit officia, tempora illum perferendis id labore expedita, pariatur consequatur, quaerat eum nihil? Nulla sunt veniam reiciendis aspernatur quos fuga placeat nobis sint fugiat delectus ullam obcaecati, non quidem repellendus quam!</p>
+
+    <p class="beforeAndAfter">Add some content before and after this paragraph</p>
+
+    <p class="selectParts">Select a part of this paragraph. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae vel rem quidem laudantium exercitationem iste sapiente iusto excepturi fugit odit quo officiis earum doloremque, reprehenderit officia ullam, optio, voluptatem quia est necessitatibus culpa cumque perferendis! Perspiciatis quasi mollitia tempore provident accusamus corrupti soluta, distinctio quidem quia omnis et excepturi iste!</p>
+
+    <h2>Cascade Algorithm</h2>
+    <p class="cascade">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt sequi dicta delectus repellat nesciunt ipsum eius expedita dolore totam iste.</p>
+
+    <br>
+
+    <div class="boxModel">
+        <p>Box Model</p>
+    </div>
+
+    <div class="boxModel"></div>
+
+
+
+
+
+    <br><br><br>
+</body>
+</html>

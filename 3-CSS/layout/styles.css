@@ -1,0 +1,134 @@
+/* Box Sizing */
+.box-content {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightgray;
+    box-sizing: content-box;
+}
+
+.box-border {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+
+/* Display property */
+.block {
+    display: block;
+    background-color: lightcoral;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    width: 200px;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+/* Element Positioning */
+.static {
+    position: static;
+    background-color: lightseagreen;
+    left: 80px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.relative {
+    position: relative;
+    background-color: chartreuse;
+    width: 200px;
+    height: 50px;
+    left: 80px;
+    top: 0;
+}
+
+.absolute {
+    position: absolute;
+    background-color: lightgrey;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    left: 80px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: lightpink;
+    width: 200px;
+    height: 50px;
+    top: 0;
+}
+
+.sticky {
+    position: sticky;
+    background-color: deeppink;
+    width: 200px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+}
+
+.float-right {
+    float: right;
+    width: 200px;
+    height:200px;
+    background-color: indianred;
+}
+
+.float-left {
+    float: left;
+    width: 200px;
+    height:200px;
+    background-color: goldenrod;
+}
+
+.clear-floats {
+    clear: both;
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* Centering Elements */
+.parent-box {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.center-horizontal {
+    padding: 20px;
+    background-color: gray;
+}
+
+.center-vertical {
+    background-color: coral;
+    display: flex;
+    align-items: center
+}
+
+.center-horizontal-vertial {
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

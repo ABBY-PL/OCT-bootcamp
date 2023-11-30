@@ -1,0 +1,16 @@
+.color-example{
+    color: pink;
+    background-color: chocolate;
+}
+
+/* Background Colors and Images */
+.background-example {
+    background-color: #7e5151;
+  }
+
+  /* Background Positioning and Repeating */
+  .background-position-example {
+    background-image: url("https://cutewallpaper.org/21/photo-background-images/Tv-Series-Colorful-Neon-Glow-Stock-Footage-Video-100-Royalty-free-1027713866-Shutterstock.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
