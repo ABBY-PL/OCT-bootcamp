@@ -1,0 +1,56 @@
+.gridItem {
+    min-width: 20px;
+    margin: 10px;
+    border: 2px black solid;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+.cross-axis {
+    position: absolute;
+    right: 50%;
+    height: 1080px;
+    width: 3px;
+    background-color: blue;
+}
+
+.main-axis {
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 2160px;
+    background-color: red;
+}
+
+.container {
+    background-color: yellowgreen;
+}
+
+/* ======= gridbox properties discussion starts here ========*/
+
+.gridContainer{
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 2fr; */
+    /* grid-template-columns: 30% 30% 40%; */
+    grid-template-areas: 
+        'header header header .'
+        'side . . .'
+        'side . . .';
+    grid-auto-rows: 100px;
+    /* grid-template-rows: 100px 50px 150px; */
+}
+
+.grid1{
+    grid-area:header;
+}
+.grid2{
+    /* grid-column: 2 / span 1; */
+    grid-area: side;
+}
+
+.grid3{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
