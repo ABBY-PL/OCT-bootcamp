@@ -1,22 +1,35 @@
-//Strings - abc123@#$
-let name = "John";
-console.log("The type of name:", typeof name);
+// Introduction to Arrays
 
-//Number - 123334
-let age = 25;
-console.log("The type of age:", typeof age);
+let superheros = ["Superman", "Batman", "Joker", "Spiderman", "Wonder Woman"];
 
-//Boolean - True or false
-let isStudent = false;
-let isTeacher = true;
-console.log("The type of isStudent:", typeof isStudent);
-console.log("The type of isTeacher:", typeof isTeacher);
+console.log("Hero 1 is", superheros[0]);
+console.log("Hero 5 is", superheros[5]);
 
-//Null - Intentional absence of data
-let emailAddress = null;
-console.log("The type of emailAddress:", typeof emailAddress);
+superheros[2] = "Doctor Strange";
 
-let myNumber;
-console.log(myNumber);
-console.log("The value of city:",myNumber);
-console.log("The type if city:", typeof myNumbergit);
+
+//Push method
+superheros.push("Deadpool");
+console.log(superheros);
+
+//Pop method
+superheros.pop();
+console.log(superheros);
+
+//Array Iteration
+for (let i = 0; i <= 4; i++) {
+    console.log("Hero ", i+1, "is", superheros[i]);
+}
+
+//forEach method
+superheros.forEach(function(hero){
+    console.log(hero);
+})
+
+//Array methods
+console.log("Array length is", superheros.length);
+console.log("Index of Wonder Woman is", superheros.indexOf("Wonder Woman"));
+console.log("Joined Arrage:", superheros.join("-"));
+
+let sliceArray = superheros.slice(0,4);
+console.log(sliceArray);
